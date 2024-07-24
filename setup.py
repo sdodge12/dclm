@@ -205,17 +205,6 @@ setup(
     description='Description of your package',  # Add a brief description
     packages=find_packages(),
     install_requires=required,
-    cmdclass={
-        'install': DownloadAssetsCommand,
-    },
-)
-
-setup(
-    name='your_package',
-    version='0.1.0',
-    description='Your package description',
-    packages=find_packages(),
-    install_requires=required,
     extras_require={
         'baselines': ['some_package>=1.0.0'],
         'training': ['tensorflow>=2.0', 'keras'],
